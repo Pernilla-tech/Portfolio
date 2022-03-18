@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pernilla Skeppstedts Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+         <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+    </head>
+    <body>
+        <header>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Hem</a></li>
+                    <li class="nav__item"><a href="#cv" class="nav__link">CV</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Om mig</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Mina projekt</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hej, jag heter <strong>Pernilla Skeppstedt</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Javascript-utvecklare</p>
+            <img src="img/IMG_8288.jpg" alt="a picture of Pernilla" class="intro__img">
+        </section>
+
+
+        <!-- My services -->
+        <section class="my-services" id="cv">
+            <h2 class="section__title section__title--services">Min bakgrund</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>CV</h3>
+                  <a id="cv" href="./files.js/CV.pdf">Ladda ner mitt CV här</a>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+
+            <a href="#work" class="btn">Mina projekt</a>
+        </section>
+
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Vem är jag</h2>
+           <p class="section__subtitle section__subtitle--about">Javascript-utvecklare baserad i Göteborg</p>
+
+           <div class="about-me__body">
+                <p>Jag är 33 år gammal. Jag bor i Mölndal tillsammans med min sambo och 4-åriga dotter.</p>
+                <p>Just nu läser jag till Javascript-utvecklare på IT-högskolan i Göteborg.
+                <p>Kurser jag hittills har läst:</p>
+                <ul>
+                    <li>HTML och CSS</li>
+                    <li>Native JavaScript</li>
+                    <li>Grafisk design och UX‑design</li>
+                    <li>JavaScript med ramverk</li>
+                    <li>Agil utveckling</li>
+                </ul>
+
+                <p>Kurser jag kommer ha läst när andra terminen är avklarad:</p>
+                    <ul>
+                        <li>Backendprogrammering och databaser</li>
+                        <li>Crossplattform‑utveckling (react)</li>
+                    </ul>
+                    <p>I övrigt älskar jag tacos och att träna.</p>
+
+           </div>
+
+           <img src="img/pernilla.jpg" alt="picture of Pernilla" class="about-me__img">
+        </section>
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">Projekt</h2>
+            <p class="section__subtitle section__subtitle--work">Här ser du mina projekt</p>
+
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://pernillas-first-javascript-project.netlify.app/main.html" class="portfolio__item">
+                    <div class="portfolio_img_wrap">
+                         <img src="img/photo1.jpg" alt="A picture of programming code" class="portfolio__img">  <div class="portfolio_middle">
+                    <div class="portfolio_hover_text"><p>Mitt första JavaScript-projekt</p></div>
+                </div>
+            </div>
+            </a>
+
+                <!-- Portfolio item 02 -->
+                <a href="https://naughty-kepler-7c8818.netlify.app/#/" class="portfolio__item">
+                    <div class="portfolio_img_wrap">
+                    <img src="img/photo2.jpg" alt="A picture of programming code" class="portfolio__img">
+                    <div class="portfolio_middle">
+                        <div class="portfolio_hover_text"><p>Mitt första Vue-projekt</p></div>
+                    </div>
+                    </div>
+                </a>
+
+
+                <!-- Portfolio item 03 -->
+                <!-- <a href="portfolio-item3.html" class="portfolio__item">
+                    <img src="img/photo3.jpg" alt="A picture of programming code" class="portfolio__img">
+                </a> -->
+
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <a href="mailto:pernilla.skeppstedt@gmail.com" class="footer__link">pernilla.skeppstedt@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Pernilla-tech">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/pernilla-skeppstedt-a5a70164/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
